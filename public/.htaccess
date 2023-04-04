@@ -4,6 +4,8 @@
     </IfModule>
 
     RewriteEngine On
+    
+    AddType text/html .php
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
