@@ -41,7 +41,7 @@ form.addEventListener('click', function(event) {
 		let preloader = document.querySelector('#preloader')
 		preloader.style.display = 'block'
 
-		
+
 		var request = new XMLHttpRequest();
 
 		request.open('POST', url, true);
@@ -66,7 +66,7 @@ form.addEventListener('click', function(event) {
 						}
 
 						form[item].nextElementSibling.innerHTML = response.error[item]
-						
+
 					}
 				}else if (response.success) {
 					let status = document.querySelector('#status')
@@ -84,6 +84,6 @@ form.addEventListener('click', function(event) {
 		}
 		request.send(JSON.stringify(data))
 	}
-	
+
 
 })
